@@ -44,6 +44,8 @@ fi
 
 mkdir $DIR
 
+
+export DOMAIN_NAME=$DOMAIN_NAME
 envsubst < cert.conf.template > cert.conf
 
 openssl genrsa -out $DIR/cert.key 2048
