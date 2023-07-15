@@ -4,7 +4,7 @@ echo ""
 
 
 ROOTCADIR="./certs/root"
-if [ -d "$DIR" ]; then
+if [ -d "$ROOTCADIR" ]; then
   echo "Root CA found. Generting root CA skipped."
 else
   echo "Root CA not found, creating Root CA"
