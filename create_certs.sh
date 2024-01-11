@@ -18,7 +18,7 @@ else
     echo "sudo security add-trusted-cert -d -r trustRoot -k /Library/Keychains/System.keychain $ROOTCADIR/rootCA.crt"
     sudo security add-trusted-cert -d -r trustRoot -k /Library/Keychains/System.keychain $ROOTCADIR/rootCA.crt
   elif [[ $OSTYPE == 'linux'* ]]; then
-    echo "cp $ROOTCADIR/cert.crt /usr/local/share/ca-certificates/rootCA.crt && update-ca-certificates"
+    echo "sudo cp $ROOTCADIR/cert.crt /usr/local/share/ca-certificates/rootCA.crt && sudo update-ca-certificates"
   fi
   echo ""
   echo ""
